@@ -1,0 +1,11 @@
+ARG BASE_IMAGE=rust:1.52.1-slim-buster
+
+FROM $BASE_IMAGE as builder
+WORKDIR app
+COPY . .
+RUN cargo build --release
+CMD ["./target/release/hello"]
+
+FROM $BASE_IMAGE
+COPY --from=builder /app/target/release/hello /
+CMD ["./hello"]
