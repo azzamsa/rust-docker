@@ -14,7 +14,3 @@ This repo serves as a boilerplate to create a very small Docker image with a
 very fast build time for Rust application.
 
 Red the https://azzamsa.com/n/rust-docker know more.
-
-## Contributing
-
-Please send patches and questions to my [public-inbox](https://lists.sr.ht/~azzamsa/public-inbox) mailing list.
